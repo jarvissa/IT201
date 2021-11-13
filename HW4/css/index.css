@@ -1,0 +1,13 @@
+@import "base.css";
+@import "header.css";
+@import "intro.css";
+@import "body.css";
+@import "footer.css";
+
+.container {
+  max-width: 768px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 4rem 4rem 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

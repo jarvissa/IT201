@@ -1,0 +1,46 @@
+.intro {
+  margin-bottom: 3rem;
+}
+
+.intro .image {
+  width: 100%;
+  max-width: 100%;
+}
+
+.intro .summary {
+  padding: 2rem 0 0;
+  text-align: center;
+}
+
+.intro .summary h1 {
+  margin-bottom: 0.5rem;
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 3.6rem;
+}
+
+.intro .summary h3 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+.intro .summary p {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+@media screen and (min-width: 576px) {
+  .intro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  .intro .summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    text-align: right;
+  }
+}

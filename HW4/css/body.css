@@ -1,0 +1,98 @@
+.body {
+  border-top: 1px solid #18191a;
+  border-bottom: 1px solid #18191a;
+}
+
+.body .body-title {
+  margin-bottom: 1rem;
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 1.8rem;
+}
+
+.body .education {
+  padding: 2rem 0;
+  text-align: justify;
+}
+
+.body .education .institution:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.body .institution h5,
+.body .institution h6,
+.body .institution p {
+  font-size: 1.4rem;
+}
+
+.body .skills {
+  margin-right: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.body .skills .list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.body .skill {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background-color: #18191a;
+  color: #fff;
+  font-size: 1.2rem;
+  user-select: none;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.body .skill:hover {
+  transform: translateY(-2px);
+}
+
+.body .experience {
+  padding: 2rem 0;
+  text-align: justify;
+}
+
+.body .experience .institution:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.body .experience .institution h5 {
+  margin-bottom: 0.4rem;
+  font-weight: semibold;
+}
+
+.body .experience .institution p {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.body .experience .institution span {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 576px) {
+  .body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .body .body-left {
+    border-right: 1px solid #18191a;
+  }
+
+  .body .body-right {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .body .education,
+  .body .skills {
+    padding: 2rem 0;
+    border-bottom: 1px solid #18191a;
+  }
+}

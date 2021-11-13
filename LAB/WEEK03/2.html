@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>test</title>
+    <style>
+      p {
+        background-color: gray;
+        margin: 10px;
+      }
+      div {
+        color: white;
+        background-color: #009900;
+        margin: 2px;
+        font-size: 25px;
+        padding: 1rem;
+      }
+
+      div a {
+        position: relative;
+        color: white;
+        text-decoration: none;
+      }
+
+      div a::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-bottom: 3px solid #3498db;
+        transform: scaleX(0);
+        transition: all 300ms ease;
+      }
+
+      div a:hover::before,
+      div a:focus::before,
+      div a:active::before {
+        transform: scaleX(1);
+      }
+
+      div a:visited {
+        color: #e74c3c;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+    </div>
+    <div><a href="https://www.youtube.com/" target="_blank">YouTube</a></div>
+    <div><a href="https://github.com/" target="_blank">GitHub</a></div>
+    <div><a href="https://astr.io/" target="_blank">Ryuten</a></div>
+  </body>
+</html>
